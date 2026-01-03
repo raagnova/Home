@@ -1,11 +1,12 @@
 
   # Band Page for Raagnova
-
-  This is a code bundle for Band Page for Raagnova. The original project is available at https://www.figma.com/design/aQSSc9x35Q04BYIjCfhntV/Band-Page-for-Raagnova.
-
-  ## Running the code
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
+`git checkout main`
+`npm run build`
+`cp -r dist ~/dist-temp`
+`git checkout gh-pages`
+`rm -rf *`
+`cp -r ~/dist-temp/* .`
+`git add .`
+`git commit -m "Deploy build"`
+`git push origin gh-pages --force`
+`git checkout main`
